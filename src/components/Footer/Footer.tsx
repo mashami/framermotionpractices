@@ -62,7 +62,7 @@ const Footer = () => {
             onBlur={handleInputBlur}
             className={cn(
               `bg-transparent border-b-[0.5px] ring-0 w-full`,
-              isInputFocused && "focus:border-transparent focus:ring-0"
+              isInputFocused && "border-transparent ring-0"
             )}
           />
         </div>
