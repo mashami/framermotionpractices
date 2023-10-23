@@ -14,6 +14,7 @@ const Footer = () => {
   const handleInputBlur = () => {
     setInputFocused(false)
   }
+
   return (
     <div className="grid grid-cols-2  gap-48 pr-32 w-full">
       <div className="space-y-16 grid grid-rows-2 w-full">
@@ -47,12 +48,17 @@ const Footer = () => {
               htmlFor=""
               className={cn(
                 "relative mt-0 transition",
-                isInputFocused && "mt-[-30px]"
+                isInputFocused && "transform translate-y-[-15px]"
               )}
             >
               Enter your message
             </label>
-            <ArrowSvg className="rotate-45" />
+            <ArrowSvg
+              className={cn(
+                "rotate-45",
+                isInputFocused && "transform translate-y-[-15px]"
+              )}
+            />
           </span>
           <input
             type="text"
@@ -61,8 +67,10 @@ const Footer = () => {
             onFocus={handleInputFocus}
             onBlur={handleInputBlur}
             className={cn(
-              `bg-transparent border-b-[0.5px] ring-0 w-full`,
-              isInputFocused && "border-transparent ring-0"
+              "border-b-[0.5px] border-white ring-transparent w-full bg-transparent flex flex-shrink-0",
+              isInputFocused
+                ? " outline-none ring-transparent"
+                : `bg-transparent border-b-[0.5px] ring-0 w-full `
             )}
           />
         </div>
