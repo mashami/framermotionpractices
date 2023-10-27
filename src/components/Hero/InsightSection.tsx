@@ -4,7 +4,7 @@ const InsightSection = () => {
   return (
     <div>
       <h1 className="text-6xl text-white font-light mt-4">Insight</h1>
-      <div className="grid grid-cols-3 gap-10">
+      <div className="grid md:grid-cols-3 grid-cols-1 md:gap-10 gap-5">
         <ImageCard
           url="/Brand-Guidelines-Blog.webp"
           description="What are the brand guidelines !"

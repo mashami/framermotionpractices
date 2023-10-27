@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className="text-white">
       <Hero />
-      <div className="mt-56">
+      <div className="md:mt-56 mt-8">
         <Footer />
       </div>
     </div>

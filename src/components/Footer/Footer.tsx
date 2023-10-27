@@ -21,10 +21,10 @@ const Footer = () => {
   }
 
   return (
-    <div className="grid grid-cols-2  gap-48 pr-32 w-full">
-      <div className="space-y-16 grid grid-rows-2 w-full">
+    <div className="grid md:grid-cols-2 grid-cols-1 md:gap-48 gap-0 md:pr-32 pr-0 w-full">
+      <div className="space-y-16  grid md:grid-rows-2 mb-16 md:mb-0 w-full">
         <span className="space-y-7">
-          <h1 className="text-white text-3xl">
+          <h1 className="text-white md:text-3xl text-2xl">
             It all starts here. Let’s build your brand to communicate more
             effectively.
           </h1>
@@ -47,7 +47,7 @@ const Footer = () => {
             }
           />
         </span>
-        <div className=" w-full  pr-20">
+        <div className="md:w-full w-[85%] md:pr-20 ">
           <span
             className="flex justify-between items-center cursor-pointer "
             onClick={handleInputFocus}
@@ -84,7 +84,7 @@ const Footer = () => {
           />
         </div>
       </div>
-      <div className=" grid grid-cols-2 text-[15px] font-light gap-[135px]">
+      <div className="grid grid-cols-2 text-[15px] font-light md:gap-[135px] gap-12">
         <div>
           <span className="grid grid-rows-3 gap-8">
             <span>

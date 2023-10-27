@@ -5,12 +5,12 @@ const WhatWeDoSection = () => {
   const scrollRef = useRef(null)
   return (
     <div className="w-full">
-      <div className="space-y-28 mt-3">
+      <div className="md:space-y-28 space-y-8 mt-3">
         <h1 className="text-5xl text-white">What we do</h1>
         <div className="w-full border border-white/30 mt-12 "></div>
       </div>
       <div>
-        <span className=" w-full gap-40  flex justify-start items-center mt-3">
+        <span className=" w-full md:gap-40 gap-0  flex md:justify-start justify-between items-center mt-3">
           <h1 className="text-white">Wake-up. Rise. Outshine.</h1>
           <h1 className="text-white">Brand. Digital. Motion.</h1>
         </span>
@@ -20,15 +20,15 @@ const WhatWeDoSection = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ root: scrollRef }}
-          className="pl-[26%] mt-12 space-y-12"
+          className="md:pl-[26%] pl-[5%] md:mt-12 mt-5 space-y-12"
         >
-          <h1 className="text-white text-3xl">
+          <h1 className="text-white md:text-3xl text-2xl">
             It’s simple, but effective. First, we reveal your brand truth. Then
             we communicate it. So everyone who matters to you, will understand
             exactly why you matter.
           </h1>
-          <div className="w-full border border-white/30 mt-12 "></div>
-          <span className="flex gap-[28%]">
+          <div className="w-full border border-white/30 md:mt-12 mt-5 "></div>
+          <span className="flex md:gap-[28%] gap-[10%]">
             <h1 className="text-white text-3xl">Brand</h1>
             <span>
               <p className="text-white/75">
@@ -44,8 +44,8 @@ const WhatWeDoSection = () => {
             </span>
           </span>
           {/* Component for this */}
-          <div className="w-full border border-white/30 mt-12 "></div>
-          <span className="flex gap-[28%]">
+          <div className="w-full border border-white/30 md:mt-12 mt-5 "></div>
+          <span className="flex md:gap-[28%] gap-[10%]">
             <h1 className="text-white text-3xl">Digital</h1>
             <span>
               <p className="text-white/75">
@@ -60,8 +60,8 @@ const WhatWeDoSection = () => {
               </span>
             </span>
           </span>
-          <div className="w-full border border-white/30 mt-12 "></div>
-          <span className="flex gap-[28%]">
+          <div className="w-full border border-white/30 md:mt-12 mt-5"></div>
+          <span className="flex md:gap-[28%] gap-[10%]">
             <h1 className="text-white text-3xl">Motion</h1>
             <span className="">
               <p className="text-white/75">

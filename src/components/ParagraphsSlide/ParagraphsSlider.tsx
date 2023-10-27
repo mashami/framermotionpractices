@@ -15,7 +15,7 @@ const ImagesSlider = () => {
       id: v4(),
       text: (
         <div className="space-y-5">
-          <h1 className=" text-3xl text-left">
+          <h1 className=" md:text-3xl text-2xl md:text-left ">
             “We worked with Dawn to completely overhaul our company messaging,
             branding and website and we couldn’t be happier with the result! The
             people at Dawn led us through the process
@@ -31,7 +31,7 @@ const ImagesSlider = () => {
       id: v4(),
       text: (
         <div className="space-y-5">
-          <h1 className=" text-3xl text-left">
+          <h1 className=" md:text-3xl text-2xl md:text-left ">
             “It’s been a pleasure working with Dawn from start to finish. They
             recently created our new brand and website, and since then, we’ve
             seen an increase in enquiries and had multiple compliments on our
@@ -49,7 +49,7 @@ const ImagesSlider = () => {
       id: v4(),
       text: (
         <div className="space-y-5">
-          <h1 className=" text-3xl ">
+          <h1 className=" md:text-3xl text-2xl ">
             “Dawn didn't just design our website, but dug deep to define who we
             are as a company and business and used that to create the website
             feel and style. We ended up with brand clarity and new logos -
@@ -78,7 +78,7 @@ const ImagesSlider = () => {
       <span
         onClick={handleClick}
         className={cn(
-          "w-2 h-2 rounded-full cursor-pointer p-[5.5px]",
+          "w-2 h-2 rounded-full cursor-pointer md:p-[5.5px] p-[8px]",
           isSelected ? "bg-white" : "bg-transparent border"
         )}
         key={index}

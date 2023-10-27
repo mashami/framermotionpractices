@@ -14,7 +14,7 @@ const WorkSection = () => {
     >
       <h1 className="text-5xl text-white mt-3">Work</h1>
       <div className="group ">
-        <div className="w-full relative overflow-hidden h-[760px] cursor-pointer mt-24 rounded-xl ">
+        <div className="w-full relative overflow-hidden md:h-[760px] h-[460px] cursor-pointer md:mt-24 mt-12 rounded-xl ">
           <Image
             src={"/WorkImage.webp"}
             className="transform transition-transform duration-300 ease-in-out group-hover:scale-105 group"
@@ -42,9 +42,9 @@ const WorkSection = () => {
           <ArrowSvg />
         </span>
       </div>
-      <div className=" w-full mt-16 grid grid-cols-2 gap-12 relative">
+      <div className=" w-full mt-16 grid md:grid-cols-2 grid-cols-1 gap-12 relative">
         <div className="space-y-4 cursor-pointer group">
-          <div className="relative w-full h-[610px] rounded-xl group overflow-hidden">
+          <div className="relative w-full md:h-[610px] h-[320px] rounded-xl group overflow-hidden">
             <Image
               src={"/imagework2.webp"}
               className="transform  transition-transform duration-200 ease-in-out group-hover:scale-105"
@@ -63,7 +63,7 @@ const WorkSection = () => {
           <div className="space-y-3 group">
             <div className=" rounded-xl flex self-start relative cursor-pointer">
               <Video className="rounded-xl" />
-              <div className="absolute top-4 left-4 z-10 space-x-4">
+              <div className="absolute top-4 left-4 z-10 md:space-x-4 space-x-2">
                 <Button
                   text="Brand"
                   variant={"ghost"}
@@ -119,7 +119,7 @@ const WorkSection = () => {
           />
         </div>
       </div>
-      <div className=" w-full mt-16 grid grid-cols-2 gap-12 relative mb-44">
+      <div className=" w-full mt-16 grid md:grid-cols-2 grid-cols-1 gap-12 relative mb-44">
         <div>
           <div className="space-y-4 cursor-pointer group">
             <div className="relative w-full h-[350px]  rounded-xl group overflow-hidden ">
@@ -147,7 +147,7 @@ const WorkSection = () => {
           </div>
         </div>
         <div className="space-y-3 group">
-          <div className=" relative w-full h-[610px] rounded-xl group overflow-hidden cursor-pointer">
+          <div className=" relative w-full md:h-[610px] h-[350px] rounded-xl group overflow-hidden cursor-pointer">
             <Image
               src={"/Apadmi_Still.webp"}
               className="transform  transition-transform duration-200 ease-in-out group-hover:scale-105"

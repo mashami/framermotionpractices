@@ -10,7 +10,7 @@ import InsightSection from "./InsightSection"
 
 const Hero = () => {
   return (
-    <div className="pt-[32rem]">
+    <div className="md:pt-[32rem] pt-28">
       <motion.div
         initial={{ y: 100 }}
         animate={{ y: 0 }}
@@ -18,7 +18,7 @@ const Hero = () => {
       >
         <BrandSection />
       </motion.div>
-      <div className="w-full border border-white/30 mt-12 "></div>
+      <div className="w-full border border-white/30 md:mt-12 mt-5 "></div>
       <WorkSection />
 
       <motion.div
@@ -27,16 +27,16 @@ const Hero = () => {
         exit={{ opacity: 0, y: 50 }}
         transition={{ duration: 0.5 }}
       >
-        <div className="w-full border border-white/30 mt-12 "></div>
+        <div className="w-full border border-white/30 md:mt-12 mt-5 "></div>
         <WhatWeDoSection />
       </motion.div>
 
       <div className="mt-40">
-        <div className="w-full border border-white/30 mt-12 "></div>
+        <div className="w-full border border-white/30 md:mt-12 mt-5 "></div>
 
         <TestimonialSection />
       </div>
-      <div className="w-full border border-white/30 mt-12 "></div>
+      <div className="w-full border border-white/30 md:mt-12 mt-5 "></div>
       <InsightSection />
     </div>
   )

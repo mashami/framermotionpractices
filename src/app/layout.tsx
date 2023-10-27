@@ -26,7 +26,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={cn(poppins.variable, "Background ")}>
         <NavBar />
-        <main className="px-[30px]">{children}</main>
+        <main className="md:container px-5">{children}</main>
         <SubFooter />
       </body>
     </html>
