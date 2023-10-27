@@ -14,7 +14,7 @@ const ArrowSvg = ({ className, onClick }: ArrowSvgProp) => {
       onClick={onClick}
     >
       <svg
-        className="w-3 h-3 -rotate-45"
+        className="w-4 h-4 -rotate-45"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 256 256"
       >

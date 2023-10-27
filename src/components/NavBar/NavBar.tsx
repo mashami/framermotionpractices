@@ -23,7 +23,7 @@ const NavBar = () => {
   return (
     <nav
       className={cn(
-        "flex justify-between px-14 items-center h-5 max-w-screen py-16 text-white bg-transparent fixed top-0 right-0 left-0 z-10 font-poppins font-light z-40",
+        "flex justify-between px-14 items-center h-5 max-w-screen py-16 text-white bg-transparent fixed top-0 right-0 left-0  font-poppins font-light z-40",
         isScrolled && " backdrop-blur-md border-b-[0.5px] border-white/10"
       )}
     >

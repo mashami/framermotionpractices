@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils"
-import { useState } from "react"
+import { useRef, useState } from "react"
 import { ArrowSvg } from "../ArrowSvg"
 import { Button } from "../ui/button"
 
@@ -7,8 +7,13 @@ const Footer = () => {
   const [isInputFocused, setInputFocused] = useState<boolean>(false)
   const [text, setText] = useState<string>("")
 
+  const inputRef = useRef<HTMLInputElement | null>(null)
+
   const handleInputFocus = () => {
     setInputFocused(true)
+    if (inputRef.current) {
+      inputRef.current.focus()
+    }
   }
 
   const handleInputBlur = () => {
@@ -43,11 +48,14 @@ const Footer = () => {
           />
         </span>
         <div className=" w-full  pr-20">
-          <span className="flex justify-between items-center ">
+          <span
+            className="flex justify-between items-center cursor-pointer "
+            onClick={handleInputFocus}
+          >
             <label
               htmlFor=""
               className={cn(
-                "relative mt-0 transition",
+                "relative mt-0 transition ",
                 isInputFocused && "transform translate-y-[-15px]"
               )}
             >
@@ -62,6 +70,7 @@ const Footer = () => {
           </span>
           <input
             type="text"
+            ref={inputRef}
             onChange={(e) => setText(e.target.value)}
             value={text}
             onFocus={handleInputFocus}

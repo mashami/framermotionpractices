@@ -59,42 +59,45 @@ const WorkSection = () => {
             <ArrowSvg />
           </span>
         </div>
-        <div className="space-y-3 group">
-          <div className=" rounded-xl flex self-start relative cursor-pointer">
-            <Video className="rounded-xl" />
-            <div className="absolute top-4 left-4 z-10 space-x-4">
-              <Button
-                text="Brand"
-                variant={"ghost"}
-                className="bg-white/25 hover:text-white rounded-full py-1 text-white font-light hover:no-underline hover:bg-white/25"
-              />
-              <Button
-                text="Digital"
-                variant={"ghost"}
-                className="bg-white/25 hover:text-white rounded-full py-1 text-white font-light hover:no-underline hover:bg-white/25"
-              />
-              <Button
-                text="Motion"
-                variant={"ghost"}
-                className="bg-white/25 hover:text-white rounded-full py-1 text-white font-light hover:no-underline hover:bg-white/25"
-              />
-              <Button
-                text="Work"
-                variant={"link"}
-                className="border  rounded-full py-1 text-white font-light hover:no-underline hover:bg-transparent hover:text-white"
-              />
+        <div>
+          <div className="space-y-3 group">
+            <div className=" rounded-xl flex self-start relative cursor-pointer">
+              <Video className="rounded-xl" />
+              <div className="absolute top-4 left-4 z-10 space-x-4">
+                <Button
+                  text="Brand"
+                  variant={"ghost"}
+                  className="bg-white/25 hover:text-white rounded-full py-1 text-white font-light hover:no-underline hover:bg-white/25"
+                />
+                <Button
+                  text="Digital"
+                  variant={"ghost"}
+                  className="bg-white/25 hover:text-white rounded-full py-1 text-white font-light hover:no-underline hover:bg-white/25"
+                />
+                <Button
+                  text="Motion"
+                  variant={"ghost"}
+                  className="bg-white/25 hover:text-white rounded-full py-1 text-white font-light hover:no-underline hover:bg-white/25"
+                />
+                <Button
+                  text="Work"
+                  variant={"link"}
+                  className="border  rounded-full py-1 text-white font-light hover:no-underline hover:bg-transparent hover:text-white"
+                />
+              </div>
             </div>
-          </div>
-          <div className="cursor-pointer">
-            <span className="flex justify-start items-center gap-2">
-              <h1 className="text-white">DMFA</h1>
-              <ArrowSvg />
-            </span>
-            <h1 className="text-white/50 pl-16 ">
-              Rebrand and website for a digital marketing agency specialising in
-              Japan and Asia. Bringing the West and Asia closer together through
-              technology, local knowledge and closer-knit relationships.
-            </h1>
+            <div className="cursor-pointer">
+              <span className="flex justify-start items-center gap-2">
+                <h1 className="text-white">DMFA</h1>
+                <ArrowSvg />
+              </span>
+              <h1 className="text-white/50 pl-16 ">
+                Rebrand and website for a digital marketing agency specialising
+                in Japan and Asia. Bringing the West and Asia closer together
+                through technology, local knowledge and closer-knit
+                relationships.
+              </h1>
+            </div>
           </div>
         </div>
 
@@ -117,27 +120,30 @@ const WorkSection = () => {
         </div>
       </div>
       <div className=" w-full mt-16 grid grid-cols-2 gap-12 relative mb-44">
-        <div className="space-y-4 cursor-pointer group">
-          <div className="relative w-full h-[350px]  rounded-xl group overflow-hidden ">
-            <Image
-              src={"/Dunphy_Case.webp"}
-              className="transform transition-transform duration-200 ease-in-out group-hover:scale-105"
-              fill
-              priority
-              style={{ objectFit: "cover" }}
-              alt="Product image"
-            />
-          </div>
-          <div className="flex justify-start items-start">
-            <span className="flex justify-start items-center gap-2">
-              <h1 className="text-white">Dunphy</h1>
-              <ArrowSvg />
-            </span>
-            <h1 className="text-white/50 pl-16">
-              Rebrand and website to re-align the positioning of Dunphy, who
-              engineer and build boiler houses for industry worldwide and are
-              looking towards a Net Zero future.
-            </h1>
+        <div>
+          <div className="space-y-4 cursor-pointer group">
+            <div className="relative w-full h-[350px]  rounded-xl group overflow-hidden ">
+              <Image
+                src={"/Dunphy_Case.webp"}
+                className="transform transition-transform duration-200 ease-in-out group-hover:scale-105"
+                fill
+                priority
+                style={{ objectFit: "cover" }}
+                alt="Product image"
+              />
+            </div>
+
+            <div className="flex justify-start items-start">
+              <span className="flex justify-start items-center gap-2">
+                <h1 className="text-white">Dunphy</h1>
+                <ArrowSvg />
+              </span>
+              <h1 className="text-white/50 pl-16">
+                Rebrand and website to re-align the positioning of Dunphy, who
+                engineer and build boiler houses for industry worldwide and are
+                looking towards a Net Zero future.
+              </h1>
+            </div>
           </div>
         </div>
         <div className="space-y-3 group">
